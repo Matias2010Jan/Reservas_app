@@ -1,0 +1,25 @@
+body { background: #6099c5; color: #132c45; }
+.topbar { background: #132c45; color: #fff; }
+.brand { font-size: 1.15rem; font-weight: 700; }
+.panel { background: #a5adb4; border: 1px solid #bdccd7; border-radius: .75rem; }
+:focus-visible { outline: 3px solid #ff5e00; outline-offset: 3px; }
+.topbar :focus-visible { outline-color: #51ff00; }
+/* Mejora 2: Ampliación de área táctil */
+.btn, .form-control, .form-select {
+  padding: 0.6rem 1rem;
+  min-height: 48px;
+}
+/* Mejora 3: Efecto visual de elevación e interacción */
+.panel, .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel:hover, .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(228, 224, 224, 0.925);
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
